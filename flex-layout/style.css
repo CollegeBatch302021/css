@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+}
+.container {
+	width: min(90%);
+	margin-inline: auto;
+	background-color: black;
+}
+.container > div {
+	margin-top: 2rem;
+	padding: 2rem;
+}
+.card {
+	background-color: #ddd;
+	border: 1px solid black;
+	padding: 3rem;
+}
+.even-columns {
+	display: flex;
+}
+.even-columns > * {
+	flex-basis: 100%;
+}
+.grid-ish {
+	display: flex;
+	flex-wrap: wrap;
+}
+.grid-ish > * {
+	flex: 1 1 30ch;
+}
+.sidebar {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sidebar > *:nth-child(1) {
+	flex: 1 1 70%;
+}
+.sidebar > *:nth-child(2) {
+	flex: 1 1 30%;
+	min-width: 30ch;
+}
